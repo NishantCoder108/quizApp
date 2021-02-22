@@ -14,9 +14,11 @@ const Quiz = () => {
       <div className="App">
         <Questions />
 
-        {/* <Link to="/">
-        <button className="try-again">Home</button>
-      </Link> */}
+        <Link to="/header" style={{ textDecoration: "none" }}>
+          <div>
+            <button className="try-again">Home</button>
+          </div>
+        </Link>
       </div>
     </ApolloProvider>
   );

@@ -25,8 +25,8 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <Questions />
-
+        {/* <Questions /> */}
+        <div>Add Your Question to 8base.com</div>
         <button className="add-question" onClick={(_) => setModalOpen(true)}>
           <img src={Add} alt="Click to create a new question" />
         </button>

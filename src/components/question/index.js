@@ -25,7 +25,8 @@ const Question = ({ question, onNextClicked }) => {
       <div className="question-image-holder">
         <img
           className="question-image"
-          src={question.image ? question.image.downloadUrl : ""}
+          // src={question.image ? question.image.downloadUrl : ""}
+          src="https://media0.giphy.com/media/3oz8xD8KOjTwxGG1q0/200w.webp?cid=ecf05e47gf71lmmm06bdvmuot61k711b1mdp2gwomd43tm9g&rid=200w.webp"
           alt={question}
         />
       </div>

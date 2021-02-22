@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import gql from "graphql-tag";
 import { graphql } from "react-apollo";
 import Question from "../question";
-import { Link } from "react-router-dom";
 import "./questions.css";
 
 const Questions = ({ questions }) => {
@@ -49,12 +48,6 @@ const Questions = ({ questions }) => {
             <button className="try-again" onClick={resetQuiz}>
               Try again
             </button>
-          </div>
-
-          <div>
-            <Link to="/">
-              <button className="try-again ">Home</button>
-            </Link>
           </div>
         </div>
       ) : (
