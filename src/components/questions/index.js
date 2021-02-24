@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import gql from "graphql-tag";
 import { graphql } from "react-apollo";
 import Question from "../question";
-
 import "./questions.css";
 
 const Questions = ({ questions }) => {
@@ -31,10 +30,7 @@ const Questions = ({ questions }) => {
     <div>
       {showFinished ? (
         <div className="results">
-          <img
-            src="https://memegenerator.net/img/instances/70669406/your-watch-has-ended.jpg"
-            alt="Your watch has ended"
-          />
+          <img src="https://i.gifer.com/A3KN.gif" alt="Your watch has ended" />
           <h3>
             Your results are out. You scored {score} out of {questions.length}
           </h3>
@@ -47,9 +43,13 @@ const Questions = ({ questions }) => {
         />
       )}
       {showFinished ? (
-        <button className="try-again" onClick={resetQuiz}>
-          Try again
-        </button>
+        <div>
+          <div>
+            <button className="try-again" onClick={resetQuiz}>
+              Try again
+            </button>
+          </div>
+        </div>
       ) : (
         <div className="questions-progress">
           {currentIndex + 1}/{questions.length}
@@ -57,7 +57,7 @@ const Questions = ({ questions }) => {
       )}
     </div>
   ) : (
-    <p>Loading</p>
+    <p>Loading...</p>
   );
 };
 
