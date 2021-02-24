@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="text-center">
         <a
           style={{ textDecoration: "none", color: "brown" }}
-          href="https://www.instagram.com/ketu_is_here/"
+          href="https://www.instagram.com/think_with_code/"
           title="Ketu"
           target="_ketu"
         >
